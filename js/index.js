@@ -1,39 +1,39 @@
 let isopen = false;
 
 function showcb() {
-    if (isopen == true) {
-        hideall()
-    }
-    var pre = document.getElementById("cbt")
-    pre.classList.remove("hidden")
-    isopen = true
+  if (isopen == true) {
+    hideall();
+  }
+  var pre = document.getElementById("cbt");
+  pre.classList.remove("hidden");
+  isopen = true;
 }
 
 function showb() {
-    if (isopen == true) {
-        hideall()
-    }
-    var pre = document.getElementById("bt")
-    pre.classList.remove("hidden")
-    isopen = true
+  if (isopen == true) {
+    hideall();
+  }
+  var pre = document.getElementById("bt");
+  pre.classList.remove("hidden");
+  isopen = true;
 }
 
 function showdt() {
-    if (isopen == true) {
-        hideall()
-    }
-    var pre = document.getElementById("dtt")
-    pre.classList.remove("hidden")
-    isopen = true
+  if (isopen == true) {
+    hideall();
+  }
+  var pre = document.getElementById("dtt");
+  pre.classList.remove("hidden");
+  isopen = true;
 }
 
 function showl() {
-    if (isopen == true) {
-        hideall()
-    }
-    var pre = document.getElementById("lt")
-    pre.classList.remove("hidden")
-    isopen = true
+  if (isopen == true) {
+    hideall();
+  }
+  var pre = document.getElementById("lt");
+  pre.classList.remove("hidden");
+  isopen = true;
 }
 
 function hideall() {
@@ -47,3 +47,9 @@ function hideall() {
   lt.classList.add("hidden");
 }
 hideall();
+
+function enableDarkMode() {
+  document.body.style.backgroundColor = "#1e1e1e";
+  document.body.style.color = "#ffffff";
+}
+enableDarkMode();

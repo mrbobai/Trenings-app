@@ -1,3 +1,17 @@
 .hidden {
     display: none;
 }
+body {
+    max-width: 414px;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+div {
+    overflow: auto;
+}
+
+pre {
+    white-space: pre-wrap;
+}
