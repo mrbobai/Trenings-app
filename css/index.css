@@ -1,17 +1,18 @@
 .hidden {
-    display: none;
+	display: none;
 }
+
 body {
-    max-width: 414px;
-    margin: 0 auto;
-    padding: 10px;
-    font-family: Arial, sans-serif;
+	max-width: 414px;
+	margin: auto;
+	padding: 12px;
+	font-family: Arial, sans-serif;
 }
 
 div {
-    overflow: auto;
+	overflow: auto;
 }
 
 pre {
-    white-space: pre-wrap;
+	white-space: pre-wrap;
 }

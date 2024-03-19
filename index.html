@@ -1,166 +1,112 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trennings app</title>
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <button type="button" id="l" onclick="showl()">Legs</button>
-    <button type="button" id="cb" onclick="showcb()">Chest And Bicep</button>
-    <button type="button" id="dt" onclick="showdt()">Delts And Triceps</button>
-    <button type="button" id="b" onclick="showb()">Back</button>
-    <div>
-      <pre id="cbt" class="">
-chest and bicep
-10 min Warm Up on Treadmill
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Trennings app</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<h1>CodeFit</h1>
+		<div class="top-half"></div>
+		<div class="bottom-half"></div>
+		<button type="button" id="l" onclick="showl()">Legs</button>
+		<button type="button" id="c" onclick="showcb()">Chest And Bicep</button>
+		<button type="button" id="d" onclick="showdt()">Delts And Triceps</button>
+		<button type="button" id="b" onclick="showb()">Back</button>	
+		<div id=cbt>
+			<h2>Chest And Bicep</h2>
 
-Injury Prevention tip: Rotator Cuff Warm Up - 2 sets of 12 reps, rest elbow on surface to keep form tight
+			<p>Injury Prevention tip: Rotator Cuff Warm Up - 2 sets of 12 reps, rest elbow on surface to keep form tightChest</p>
 
-Decline Bench Press: 2 warm up sets of 10-12 reps, 1 working set of 6-8 reps
+			<p>Chest Press: 2 warm up sets of 10-12 reps, 1 working set of 6-8 repsIncline</p>
 
-Dorian's Tips: The Decline Bench Press is the most effective pec exercise.
+			<p>Incline Dumbbell Press (45 degree incline): 1 warm up set of 10-12 reps, 1 working set of 6-8 repsIncline</p>
 
-Incline Dumbbell Press (45 degree incline): 1 warm up set of 10-12 reps, 1 working set of 6-8 reps
+			<p>Flat Bench Dumbbell Flyes: 1 warm up set of 10-12 reps, 1 working set of 6-8 repsIncline</p>
 
-Dorian's Tips: Lower weight slowly, explode up.
+			<p>5 min rest</p>
 
-Flat Bench Dumbbell Flyes: 1 warm up set of 10-12 reps, 1 working set of 6-8 reps
+			<p>Dumbbell Concentration Curl: 1 warm up set of 10-12 reps, 1 working set of 6-8 reps</p>
 
-5 min rest
+			<p>Straight Bar Curl: 1 set of 6-8 reps</p>	
+		</div>
+		<div id=bt>
+			<h2>Back</h2>
 
-Dumbbell Concentration Curl: 1 warm up set of 10-12 reps, 1 working set of 6-8 reps
+			<p>Dumbbell pullover: 2 warm up sets 10-12 reps, 1 working set of 8-10 reps</p>
 
-Dorian's Tips: Squeeze at top.
+			<p>1 min rest</p>
 
-Straight Bar Curl: 1 set of 6-8 reps,
+			<p>Close / wide-Grip Pulldown: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps</p>
 
-Dorian's Tips: Write down your progress.
+			<p>1 min rest</p>
 
-    </pre
-      >
-      <pre id="bt" class="">
-back
-Dumbbell Pullover: 2 warm up sets 10-12 reps, 1 working set of 8-10 reps
+			<p>T-Row: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps</p>
 
-Dorian's Tips: Dumbbell Pullover Isolates only Lats.
+			<p>1 min rest</p>
 
-1 min rest
+			<p>Wide / Close-Grip Cable Row: 1 warm up set 10-12 reps, 1 working set of 8-10 reps</p>
 
-Close-Grip Pulldown: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps
+			<p>1 min rest</p>
 
-1 min rest
+			<p>Barbell Deadlifts: 1 warm up set of 10-12 reps, 1 working set 8-10 reps</p>
+		</div>
+		<div id=dtt>
+			<h2>Delts And Triceps</h2>
 
-Barbell Row: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps
+			<p>Dumbbell Shoulder Press: 1 warm up set of 10-12 reps, 1 warm up set of 8-10 reps, 1 working set of 6-8 reps</p>
 
-1 min rest
+			<p>1 min rest</p>
 
-Wide-Grip Cable Row: 1 warm up set 10-12 reps, 1 working set of 8-10 reps
+			<p>Side Lateral Raise: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps</p>
 
-Dorian's Tips: Only use straps when grip fails.
+			<p>1 min rest</p>
 
-1 min rest
+			<p>Low-Pulley Delt Raise: 1 set of 6-8 reps, each arm</p>
 
-Barbell Deadlifts: 1 warm up set of 10-12 reps, 1 working set 8-10 reps
+			<p>1 min rest</p>
 
-Dorian's Tips: Watch form in the mirror.
-    </pre
-      >
-      <pre id="dtt" class="">
-delts and triceps
-Dumbbell Shoulder Press: 1 warm up set of 10-12 reps, 1 warm up set of 8-10 reps, 1 working set of 6-8 reps
+			<p>Seated Dumbbell Flyes: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps</p>
 
-Dorian's Tips: Don't lock elbows at the top. Keep dumbbells apart. Don't over-stretch, lower dumbbells to delts.
+			<p>5 min rest</p>
 
-1 min rest
+			<p>Triceps Pushdown: 2 warm up set of 10-12 reps, 1 working set of 8-10 reps</p>
 
-Side Lateral Raise: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps
+			<p>1 min rest</p>
 
-Dorian's Tips: Change order of shoulder exercises.
+			<p>Lying Triceps Extensions: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps</p>
 
-Dorian's Tips: Half reps push when it's hard to spot.
+			<p>Seated Triceps Press: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps</p>
+		</div>
+		<div id=lt>
+			<h2>Legs</h2>
 
-1 min rest
+			<h4>Stretching</h4>
 
-Low-Pulley Delt Raise: 1 set of 6-8 reps, each arm 
+			<p>Lower Back Stretch: 1 set of 6 reps, each side</p>
 
-Dorian's Tips: Have partner lift weight to exhaust negative.
+			<p>Hamstring stretch (keeping legs straight): 1 set of 6 reps</p>
 
-1 min rest
+			<p>Glute stretch: 1 set of 6 reps</p>
 
-Reverse Dumbbell Flyes: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps
+			<p>Leg Extensions: 1 warm up set of 15 reps, 1 warm up set of 10-12 reps, 1 working set of 10-12 reps, increasing</p>
 
-Dorian's Tips: Pull elbows forward to isolate rear delts.
+			<p>1 min rest
 
-5 min rest - Recuperate and mentally prepare.
+			<p>Leg Press: 2 warm up sets of 10-12 reps, 1 working set of 10-12 reps
 
-Triceps Pushdown: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps
+			<p>1 min rest
 
-Dorian's Tips: Push bar in towards the body. Stagger feet to keep balance.
+			<p>Hack Squat: 2 warm up sets of 10-12 reps, 1 working set of 10-12 reps
 
-1 min rest
+			<p>5 min rest. Recuperate and mentally prepare.
 
-Lying Triceps Extensions: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps
+			<p>Laying Hamstring Curl: 1 warm up set of 10-12 reps, 1 working set of 10-12 reps
 
-Dorian's Tips: Don't pull bar forward to keep triceps engaged.
+			<p>1 min rest
 
-Seated Triceps Press: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps
-    </pre
-      >
-      <pre id="lt" class="">
-legs
-10 min Cardio Warm Up
-
-Stretching
-
-Lower Back Stretch: 1 set of 6 reps, each side
-
-Hamstring stretch (keeping legs straight): 1 set of 6 reps
-
-Glute stretch: 1 set of 6 reps
-
-Dorian's Tips: Active stretching doesn't weaken muscles.
-
-Leg Extensions: 1 warm up set of 15 reps, 1 warm up set of 10-12 reps, 1 working set of 10-12 reps, increasing
-
-1 min rest
-
-Leg Press: 2 warm up sets of 10-12 reps, 1 working set of 10-12 reps
-
-Dorian's Tips: True failure means mental failure.
-
-1 min rest
-
-Hack Squat: 2 warm up sets of 10-12 reps, 1 working set of 10-12 reps
-
-Dorian's Tips: Moderate Stance. Squat below parallel.
-
-5 min rest. Recuperate and mentally prepare.
-
-Seated Hamstring Curl:1 warm up set of 10-12 reps, 1 working set of 10-12 reps
-
-Dorian's Tips: Have partner lift weight to exhaust negative.
-
-1 min rest
-
-Stiff-Legged Deadlift: 1 warm up set of 10-12 reps, 1 working set of 10-12 reps
-
-Dorian's Tips: Only lower as far as a straight back allows. Don't use reverse grip. Hold bar with thumb.
-
-1 min rest
-
-Calf Press (Hack Squat): 1 warm up set of 10-12 reps, 3 rest-pause sets
-
-Dorian's Tips: Perform rest-pause sets to push beyond failure.
-
-1 min rest
-
-Seated Calf Raise (homemade): 1 warm up set of 10-12 reps, 1 working set of 6-8 reps
-
-Dorian's tips: Perform full extension and control when training calves. Cardio conditioning is needed to train to true failure. Pacing yourself doesn't push your body to grow.
-    </pre
-      >
-    </div>
-  </body>
-  <script src="js/index.js" type="text/javascript"></script>
+			<p>Stiff-Legged Deadlift: 1 warm up set of 10-12 reps, 1 working set of 10-12 reps
+		</div>
+	</body>
+	<script src="js/index.js" type="text/javascript"></script>
 </html>
