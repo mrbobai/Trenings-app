@@ -1,116 +1,90 @@
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Trennings app</title>
-		<link rel="stylesheet" href="./css/index.css" />
-	</head>
-	<body>
-		<h1>CodeFit</h1>
-		<div class="top-half"></div>
-		<div class="bottom-half"></div>
-		<button type="button" id="l" onclick="showl()">Legs</button>
-		<button type="button" id="c" onclick="showcb()">Chest And Bicep</button>
-		<button type="button" id="d" onclick="showdt()">Delts And Triceps</button>
-		<button type="button" id="b" onclick="showb()">Back</button>	
-		<div id=cbt>
-			<h2>Chest And Bicep</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeFit - Training App</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <h1>CodeFit</h1>
+    <div class="top-half"></div>
+    <div class="bottom-half"></div>
 
-			<p>Injury Prevention tip: Rotator Cuff Warm Up - 2 sets of 12 reps, rest elbow on surface to keep form tightChest</p>
+    <!-- Navigation Buttons for Workout Categories -->
+    <nav>
+        <button type="button" id="chest-btn" onclick="showcb()" aria-label="Chest and Bicep Workout">Chest and Bicep</button>
+        <button type="button" id="legs-btn" onclick="showl()" aria-label="Legs Workout">Legs</button>
+        <button type="button" id="delts-btn" onclick="showdt()" aria-label="Delts and Triceps Workout">Delts and Triceps</button>
+        <button type="button" id="back-btn" onclick="showb()" aria-label="Back Workout">Back</button>
+    </nav>
 
-			<p>Chest Press: 2 warm up sets of 10-12 reps, 1 working set of 6-8 repsIncline</p>
+    <div id=cbt>
+    <!-- Chest and Bicep Section -->
+    <section id="chest-bicep-section" aria-labelledby="chest-bicep-heading" id=cbt>
+        <h2 id="chest-bicep-heading">Chest and Bicep</h2>
+        <p>Injury Prevention tip: Rotator Cuff Warm-Up - 2 sets of 12 reps, keep elbow on a surface for stability.</p>
+        <article>
+            <p><strong>Chest Press:</strong> 2 warm-up sets of 10-12 reps, 1 working set of 6-8 reps</p>
+            <p><strong>Incline Dumbbell Press:</strong> 1 warm-up set of 10-12 reps, 1 working set of 6-8 reps</p>
+            <p><strong>Flat Bench Dumbbell Flyes:</strong> 1 warm-up set of 10-12 reps, 1 working set of 6-8 reps</p>
+            <p><strong>Dumbbell Concentration Curl:</strong> 1 warm-up set of 10-12 reps, 1 working set of 6-8 reps</p>
+            <p><strong>Straight Bar Curl:</strong> 1 set of 6-8 reps</p>
+            <p><strong>Rest:</strong> 5 minutes</p>
+        </article>
+        <img src="./images/imagination-rainbow.gif" alt="Chest and Bicep Workout Illustration">
+    </section>
+    </div>
 
-			<p>Incline Dumbbell Press (45 degree incline): 1 warm up set of 10-12 reps, 1 working set of 6-8 repsIncline</p>
+    <div id=bt>
+    <!-- Back Section -->
+    <section id="back-section" aria-labelledby="back-heading" id=bt>
+        <h2 id="back-heading">Back</h2>
+        <article>
+            <p><strong>Dumbbell Pullover:</strong> 2 warm-up sets of 10-12 reps, 1 working set of 8-10 reps</p>
+            <p><strong>Close/Wide-Grip Pulldown:</strong> 1 warm-up set of 10-12 reps, 1 working set of 8-10 reps</p>
+            <p><strong>T-Row:</strong> 1 warm-up set of 10-12 reps, 1 working set of 8-10 reps</p>
+            <p><strong>Wide/Close-Grip Cable Row:</strong> 1 warm-up set of 10-12 reps, 1 working set of 8-10 reps</p>
+            <p><strong>Barbell Deadlifts:</strong> 1 warm-up set of 10-12 reps, 1 working set of 8-10 reps</p>
+            <p><strong>Rest:</strong> 1 minute after each exercise</p>
+        </article>
+        <img src="./images/imagination-rainbow.gif" alt="Back Workout Illustration">
+    </section>
+    </div>
 
-			<p>Flat Bench Dumbbell Flyes: 1 warm up set of 10-12 reps, 1 working set of 6-8 repsIncline</p>
+    <div id=dtt>
+    <!-- Delts and Triceps Section -->
+    <section id="delts-triceps-section" aria-labelledby="delts-triceps-heading" id=dtt>
+        <h2 id="delts-triceps-heading">Delts and Triceps</h2>
+        <article>
+            <p><strong>Dumbbell Shoulder Press:</strong> 2 warm-up sets of 10-12 reps, 1 working set of 6-8 reps</p>
+            <p><strong>Side Lateral Raise:</strong> 1 warm-up set of 10-12 reps, 1 working set of 8-10 reps</p>
+            <p><strong>Low-Pulley Delt Raise:</strong> 1 set of 6-8 reps, each arm</p>
+            <p><strong>Seated Dumbbell Flyes:</strong> 1 warm-up set of 10-12 reps, 1 working set of 8-10 reps</p>
+            <p><strong>Triceps Pushdown:</strong> 2 warm-up sets of 10-12 reps, 1 working set of 8-10 reps</p>
+            <p><strong>Lying Triceps Extensions:</strong> 1 warm-up set of 10-12 reps, 1 working set of 8-10 reps</p>
+            <p><strong>Rest:</strong> 1 minute after each exercise</p>
+        </article>
+        <img src="./images/imagination-rainbow.gif" alt="Delts and Triceps Workout Illustration">
+    </section>
+    </div>
 
-			<p>5 min rest</p>
+    <div id=lt>
+    <!-- Legs Section -->
+    <section id="legs-section" aria-labelledby="legs-heading">
+        <h2 id="legs-heading">Legs</h2>
+        <article>
+            <p><strong>Leg Extensions:</strong> 2 warm-up sets, 1 working set of 10-12 reps</p>
+            <p><strong>Leg Press:</strong> 2 warm-up sets of 10-12 reps, 1 working set of 10-12 reps</p>
+            <p><strong>Hack Squat:</strong> 2 warm-up sets of 10-12 reps, 1 working set of 10-12 reps</p>
+            <p><strong>Stiff-Legged Deadlift:</strong> 1 warm-up set of 10-12 reps, 1 working set of 10-12 reps</p>
+            <p><strong>Rest:</strong> 1 minute after each exercise</p>
+        </article>
+        <img src="./images/imagination-rainbow.gif" alt="Legs Workout Illustration">
+    </section>
+    </div>
 
-			<p>Dumbbell Concentration Curl: 1 warm up set of 10-12 reps, 1 working set of 6-8 reps</p>
-
-			<p>Straight Bar Curl: 1 set of 6-8 reps</p>	
-      <img src="./images/imagination-rainbow.gif" alt="placeholder">
-		</div>
-		<div id=bt>
-			<h2>Back</h2>
-
-			<p>Dumbbell pullover: 2 warm up sets 10-12 reps, 1 working set of 8-10 reps</p>
-
-			<p>1 min rest</p>
-
-			<p>Close / wide-Grip Pulldown: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps</p>
-
-			<p>1 min rest</p>
-
-			<p>T-Row: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps</p>
-
-			<p>1 min rest</p>
-
-			<p>Wide / Close-Grip Cable Row: 1 warm up set 10-12 reps, 1 working set of 8-10 reps</p>
-
-			<p>1 min rest</p>
-
-			<p>Barbell Deadlifts: 1 warm up set of 10-12 reps, 1 working set 8-10 reps</p>
-      <img src="./images/imagination-rainbow.gif" alt="placeholder">
-		</div>
-		<div id=dtt>
-			<h2>Delts And Triceps</h2>
-
-			<p>Dumbbell Shoulder Press: 1 warm up set of 10-12 reps, 1 warm up set of 8-10 reps, 1 working set of 6-8 reps</p>
-
-			<p>1 min rest</p>
-
-			<p>Side Lateral Raise: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps</p>
-
-			<p>1 min rest</p>
-
-			<p>Low-Pulley Delt Raise: 1 set of 6-8 reps, each arm</p>
-
-			<p>1 min rest</p>
-
-			<p>Seated Dumbbell Flyes: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps</p>
-
-			<p>5 min rest</p>
-
-			<p>Triceps Pushdown: 2 warm up set of 10-12 reps, 1 working set of 8-10 reps</p>
-
-			<p>1 min rest</p>
-
-			<p>Lying Triceps Extensions: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps</p>
-
-			<p>Seated Triceps Press: 1 warm up set of 10-12 reps, 1 working set of 8-10 reps</p>
-      <img src="./images/imagination-rainbow.gif" alt="placeholder">
-		</div>
-		<div id=lt>
-			<h2>Legs</h2>
-
-			<h4>Stretching</h4>
-
-			<p>Lower Back Stretch: 1 set of 6 reps, each side</p>
-
-			<p>Hamstring stretch (keeping legs straight): 1 set of 6 reps</p>
-
-			<p>Glute stretch: 1 set of 6 reps</p>
-
-			<p>Leg Extensions: 1 warm up set of 15 reps, 1 warm up set of 10-12 reps, 1 working set of 10-12 reps, increasing</p>
-
-			<p>1 min rest
-
-			<p>Leg Press: 2 warm up sets of 10-12 reps, 1 working set of 10-12 reps
-
-			<p>1 min rest
-
-			<p>Hack Squat: 2 warm up sets of 10-12 reps, 1 working set of 10-12 reps
-
-			<p>5 min rest. Recuperate and mentally prepare.
-
-			<p>Laying Hamstring Curl: 1 warm up set of 10-12 reps, 1 working set of 10-12 reps
-
-			<p>1 min rest
-
-			<p>Stiff-Legged Deadlift: 1 warm up set of 10-12 reps, 1 working set of 10-12 reps
-        <img src="./images/imagination-rainbow.gif" alt="placeholder">
-		</div>
-	</body>
-	<script src="./js/index.js" type="text/javascript"></script>
+    <script src="./js/index.js"></script>
+</body>
 </html>
+
