@@ -1,9 +1,6 @@
 let isopen = false;
 
 function showcb() {
-  if (isopen == true) {
-    hideall();
-  }
   var pre = document.getElementById("cbt");
   pre.classList.remove("hidden");
   isopen = true;
